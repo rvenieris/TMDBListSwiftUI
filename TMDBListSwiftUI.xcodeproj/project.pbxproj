@@ -14,6 +14,15 @@
 		8C86C6DB28FF173000A9EC50 /* TMDBListSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86C6DA28FF173000A9EC50 /* TMDBListSwiftUITests.swift */; };
 		8C86C6E528FF173000A9EC50 /* TMDBListSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86C6E428FF173000A9EC50 /* TMDBListSwiftUIUITests.swift */; };
 		8C86C6E728FF173000A9EC50 /* TMDBListSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86C6E628FF173000A9EC50 /* TMDBListSwiftUIUITestsLaunchTests.swift */; };
+		8C86C6FD28FF175A00A9EC50 /* ModelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86C6F428FF175700A9EC50 /* ModelExtensions.swift */; };
+		8C86C6FE28FF175A00A9EC50 /* MDBRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86C6F528FF175700A9EC50 /* MDBRequest.swift */; };
+		8C86C6FF28FF175A00A9EC50 /* MDBGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86C6F628FF175700A9EC50 /* MDBGenre.swift */; };
+		8C86C70028FF175A00A9EC50 /* MDBResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86C6F728FF175700A9EC50 /* MDBResult.swift */; };
+		8C86C70128FF175A00A9EC50 /* TMDBServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86C6F928FF175900A9EC50 /* TMDBServices.swift */; };
+		8C86C70228FF175A00A9EC50 /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86C6FA28FF175900A9EC50 /* CodableExtensions.swift */; };
+		8C86C70328FF175A00A9EC50 /* ServicesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86C6FB28FF175900A9EC50 /* ServicesExtensions.swift */; };
+		8C86C70428FF175A00A9EC50 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86C6FC28FF175900A9EC50 /* Secrets.swift */; };
+		8C86C70728FF1A2900A9EC50 /* CodableExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 8C86C70628FF1A2900A9EC50 /* CodableExtensions */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,14 @@
 		8C86C6E028FF173000A9EC50 /* TMDBListSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDBListSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C86C6E428FF173000A9EC50 /* TMDBListSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBListSwiftUIUITests.swift; sourceTree = "<group>"; };
 		8C86C6E628FF173000A9EC50 /* TMDBListSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBListSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8C86C6F428FF175700A9EC50 /* ModelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelExtensions.swift; sourceTree = "<group>"; };
+		8C86C6F528FF175700A9EC50 /* MDBRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDBRequest.swift; sourceTree = "<group>"; };
+		8C86C6F628FF175700A9EC50 /* MDBGenre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDBGenre.swift; sourceTree = "<group>"; };
+		8C86C6F728FF175700A9EC50 /* MDBResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDBResult.swift; sourceTree = "<group>"; };
+		8C86C6F928FF175900A9EC50 /* TMDBServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMDBServices.swift; sourceTree = "<group>"; };
+		8C86C6FA28FF175900A9EC50 /* CodableExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableExtensions.swift; sourceTree = "<group>"; };
+		8C86C6FB28FF175900A9EC50 /* ServicesExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesExtensions.swift; sourceTree = "<group>"; };
+		8C86C6FC28FF175900A9EC50 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C86C70728FF1A2900A9EC50 /* CodableExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +114,8 @@
 			children = (
 				8C86C6C928FF172D00A9EC50 /* TMDBListSwiftUIApp.swift */,
 				8C86C6CB28FF172D00A9EC50 /* ContentView.swift */,
+				8C86C6F328FF175700A9EC50 /* Model */,
+				8C86C6F828FF175900A9EC50 /* Network */,
 				8C86C6CD28FF173000A9EC50 /* Assets.xcassets */,
 				8C86C6CF28FF173000A9EC50 /* Preview Content */,
 			);
@@ -127,6 +147,28 @@
 			path = TMDBListSwiftUIUITests;
 			sourceTree = "<group>";
 		};
+		8C86C6F328FF175700A9EC50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C86C6F428FF175700A9EC50 /* ModelExtensions.swift */,
+				8C86C6F528FF175700A9EC50 /* MDBRequest.swift */,
+				8C86C6F628FF175700A9EC50 /* MDBGenre.swift */,
+				8C86C6F728FF175700A9EC50 /* MDBResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C86C6F828FF175900A9EC50 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8C86C6F928FF175900A9EC50 /* TMDBServices.swift */,
+				8C86C6FA28FF175900A9EC50 /* CodableExtensions.swift */,
+				8C86C6FB28FF175900A9EC50 /* ServicesExtensions.swift */,
+				8C86C6FC28FF175900A9EC50 /* Secrets.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +185,9 @@
 			dependencies = (
 			);
 			name = TMDBListSwiftUI;
+			packageProductDependencies = (
+				8C86C70628FF1A2900A9EC50 /* CodableExtensions */,
+			);
 			productName = TMDBListSwiftUI;
 			productReference = 8C86C6C628FF172D00A9EC50 /* TMDBListSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +260,9 @@
 				Base,
 			);
 			mainGroup = 8C86C6BD28FF172D00A9EC50;
+			packageReferences = (
+				8C86C70528FF1A2900A9EC50 /* XCRemoteSwiftPackageReference "CodableExtensions" */,
+			);
 			productRefGroup = 8C86C6C728FF172D00A9EC50 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +305,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C86C70128FF175A00A9EC50 /* TMDBServices.swift in Sources */,
+				8C86C70428FF175A00A9EC50 /* Secrets.swift in Sources */,
 				8C86C6CC28FF172D00A9EC50 /* ContentView.swift in Sources */,
+				8C86C6FD28FF175A00A9EC50 /* ModelExtensions.swift in Sources */,
+				8C86C6FF28FF175A00A9EC50 /* MDBGenre.swift in Sources */,
+				8C86C70228FF175A00A9EC50 /* CodableExtensions.swift in Sources */,
 				8C86C6CA28FF172D00A9EC50 /* TMDBListSwiftUIApp.swift in Sources */,
+				8C86C70028FF175A00A9EC50 /* MDBResult.swift in Sources */,
+				8C86C70328FF175A00A9EC50 /* ServicesExtensions.swift in Sources */,
+				8C86C6FE28FF175A00A9EC50 /* MDBRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +639,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C86C70528FF1A2900A9EC50 /* XCRemoteSwiftPackageReference "CodableExtensions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rvenieris/CodableExtensions.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C86C70628FF1A2900A9EC50 /* CodableExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C86C70528FF1A2900A9EC50 /* XCRemoteSwiftPackageReference "CodableExtensions" */;
+			productName = CodableExtensions;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8C86C6BE28FF172D00A9EC50 /* Project object */;
 }
