@@ -23,6 +23,7 @@
 		8C86C70328FF175A00A9EC50 /* ServicesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86C6FB28FF175900A9EC50 /* ServicesExtensions.swift */; };
 		8C86C70428FF175A00A9EC50 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86C6FC28FF175900A9EC50 /* Secrets.swift */; };
 		8C86C70728FF1A2900A9EC50 /* CodableExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 8C86C70628FF1A2900A9EC50 /* CodableExtensions */; };
+		8C86C70928FF33E900A9EC50 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86C70828FF33E900A9EC50 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		8C86C6FA28FF175900A9EC50 /* CodableExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableExtensions.swift; sourceTree = "<group>"; };
 		8C86C6FB28FF175900A9EC50 /* ServicesExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesExtensions.swift; sourceTree = "<group>"; };
 		8C86C6FC28FF175900A9EC50 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		8C86C70828FF33E900A9EC50 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				8C86C6C928FF172D00A9EC50 /* TMDBListSwiftUIApp.swift */,
 				8C86C6CB28FF172D00A9EC50 /* ContentView.swift */,
+				8C86C70828FF33E900A9EC50 /* DetailView.swift */,
 				8C86C6F328FF175700A9EC50 /* Model */,
 				8C86C6F828FF175900A9EC50 /* Network */,
 				8C86C6CD28FF173000A9EC50 /* Assets.xcassets */,
@@ -150,10 +153,10 @@
 		8C86C6F328FF175700A9EC50 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8C86C6F428FF175700A9EC50 /* ModelExtensions.swift */,
 				8C86C6F528FF175700A9EC50 /* MDBRequest.swift */,
-				8C86C6F628FF175700A9EC50 /* MDBGenre.swift */,
 				8C86C6F728FF175700A9EC50 /* MDBResult.swift */,
+				8C86C6F428FF175700A9EC50 /* ModelExtensions.swift */,
+				8C86C6F628FF175700A9EC50 /* MDBGenre.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				8C86C6CC28FF172D00A9EC50 /* ContentView.swift in Sources */,
 				8C86C6FD28FF175A00A9EC50 /* ModelExtensions.swift in Sources */,
 				8C86C6FF28FF175A00A9EC50 /* MDBGenre.swift in Sources */,
+				8C86C70928FF33E900A9EC50 /* DetailView.swift in Sources */,
 				8C86C70228FF175A00A9EC50 /* CodableExtensions.swift in Sources */,
 				8C86C6CA28FF172D00A9EC50 /* TMDBListSwiftUIApp.swift in Sources */,
 				8C86C70028FF175A00A9EC50 /* MDBResult.swift in Sources */,

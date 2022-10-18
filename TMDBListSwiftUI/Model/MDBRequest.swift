@@ -37,6 +37,8 @@ public struct MDBRequest: Codable {
         case totalResults = "total_results"
     }
     
+    
+    
 }
 
     //

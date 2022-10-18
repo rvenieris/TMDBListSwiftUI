@@ -80,7 +80,7 @@ class TMDBService {
     
     
 
-    func getURL(for requestType: RequestType)->URL {
+    private func getURL(for requestType: RequestType)->URL {
         let urlString = self.apiUrlPrefix + requestType.rawValue + "?api_key=" + self.apiKey
         guard let url = URL(string: urlString) else {
             fatalError("Erro gerando URL")
@@ -97,7 +97,11 @@ class TMDBService {
         completion(.success(request))
     }
     
-    let dummyData = """
+    func getPosterUrl(for result: MDBResult)->URL? {
+        return URL(string: self.posterUrlPrefix + result.posterPath)
+    }
+    
+    private let dummyData = """
  {
   "page": 1,
   "results": [

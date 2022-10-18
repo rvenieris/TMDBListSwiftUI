@@ -10,49 +10,28 @@ import Foundation
 //import CodableExtensions
 
     // MARK: - Result
-public struct MDBResult: Codable {
-    internal init(adult: Bool, backdropPath: String, id: Int, name: String? = nil, title: String? = nil, originalTitle: String? = nil, releaseDate: String? = nil, video: Bool? = nil, originalLanguage: String? = nil, originalName: String? = nil, overview: String, posterPath: String, mediaType: MediaType, genreIDS: [Int], popularity: Double? = nil, firstAirDate: String? = nil, voteAverage: Double, voteCount: Int, originCountry: [String]? = nil) {
-        self.id = id
-        self.name = name
-        self.title = title
-        self.originalTitle = originalTitle
-        self.releaseDate = releaseDate
-        self.video = video
-        self.adult = adult
-        self.backdropPath = backdropPath
-        self.originalLanguage = originalLanguage
-        self.originalName = originalName
-        self.overview = overview
-        self.posterPath = posterPath
-        self.mediaType = mediaType
-        self.genreIDS = genreIDS
-        self.popularity = popularity
-        self.firstAirDate = firstAirDate
-        self.voteAverage = voteAverage
-        self.voteCount = voteCount
-        self.originCountry = originCountry
-    }
+public struct MDBResult: Codable, Identifiable {
     
-    
-    public let id: Int
-    public let name: String?
-    public let title: String?
-    public let originalTitle: String?
-    public let releaseDate: String?
-    public let video: Bool?
-    public let adult: Bool
-    public let backdropPath: String
-    public let originalLanguage: String?
-    public let originalName: String?
-    public let overview: String
-    public let posterPath: String
-    public let mediaType: MediaType
-    public let genreIDS: [Int]
-    public let popularity: Double?
-    public let firstAirDate: String?
-    public let voteAverage: Double
-    public let voteCount: Int
-    public let originCountry: [String]?
+    public var adult: Bool
+    public var backdropPath: String
+    public var id: Int
+    public var name: String
+    public var overview: String
+    public var posterPath: String
+    public var mediaType: MediaType
+    public var genreIDS: [Int]
+    public var voteAverage: Double
+    public var voteCount: Int
+
+    public let title: String? = nil
+    public let originalTitle: String? = nil
+    public let releaseDate: String? = nil
+    public let video: Bool? = nil
+    public let originalLanguage: String? = nil
+    public let originalName: String? = nil
+    public let popularity: Double? = nil
+    public let firstAirDate: String? = nil
+    public let originCountry: [String]? = nil
     
     enum CodingKeys: String, CodingKey {
         case adult = "adult"
