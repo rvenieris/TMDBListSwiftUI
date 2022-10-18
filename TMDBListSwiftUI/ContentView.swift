@@ -63,7 +63,32 @@ struct ContentView: View {
     
     
     var body: some View {
-        Text("Se deu mal, otário")
+        List(movieList, id: \.id) { movie in
+            VStack {
+                Group {
+                    Text(movie.name ?? "Nome não encontrado")
+                        .font(.title3.weight(.bold))
+                    
+                    if let movieBackdropURL = URL(string: "https://image.tmdb.org/t/p/w500"+movie.posterPath) {
+                        AsyncImage(url: movieBackdropURL, scale: 1) { image in
+                            image
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .cornerRadius(8)
+                        } placeholder: {
+                            ProgressView()
+                        }
+                    }
+                    
+                    Text(movie.overview)
+                        .font(.subheadline)
+                    
+                    Text("ID: \(movie.id)")
+                        .font(.caption.monospaced())
+                }.frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
     }
 }
 
